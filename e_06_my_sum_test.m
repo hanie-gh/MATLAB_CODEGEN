@@ -14,7 +14,7 @@ function e_06_my_sum_test ()
         -proposeFL -defaultDT numerictype(1, 16);
     
     y_expected = sum(double(x));
-    err = abs(y_expected - y)
+    err = abs(y_expected - y);
     %% codegen
     %#codegen
     coder.screener("e_06_my_sum.m");    
